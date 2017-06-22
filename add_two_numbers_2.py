@@ -1,6 +1,6 @@
 # Github: https://github.com/minfun/leetcode
 # Email: minfun@live.com
-# link: https://leetcode.com/problems/add-two-numbers/#/solutions
+# link: https://leetcode.com/problems/add-two-numbers/#/description
 
 # Definition for singly-linked list.
 import unittest
