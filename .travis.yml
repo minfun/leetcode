@@ -7,9 +7,9 @@ python:
 
 install:
   - pip install codecov
-
+  - pip install nose
 script:
-  - coverage run tests.py
+  - nosetests --with-coverage --cover-inclusive
 
 after_success:
   - codecov
