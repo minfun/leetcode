@@ -6,10 +6,11 @@ python:
   - 2.7
 
 install:
-  - pip install codecov
-  - pip install nose
+  - pip install -r requirements.txt
+
 script:
-  - nosetests --with-coverage --cover-inclusive
+  - export PYTHONPATH=$pwd
+  - nosetests --with-coverage --cover-inclusive --tests ./tests/
 
 after_success:
   - codecov

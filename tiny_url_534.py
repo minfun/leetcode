@@ -4,7 +4,6 @@
 
 import string
 import random
-import unittest
 
 
 class Codec:
@@ -35,17 +34,3 @@ class Codec:
         :rtype: str
         """
         return self.url_code.get(shortUrl[-6:], None)
-
-
-class Test(unittest.TestCase):
-
-    def setUp(self):
-        self.codec = Codec()
-
-    def test_encode_url(self):
-        longUrl = 'https://leetcode.com/problems/design-tinyurl'
-        short_url = self.codec.encode(longUrl)
-        self.assertEqual(self.codec.decode(short_url), longUrl)
-
-if __name__ == '__main__':
-    unittest.main()
