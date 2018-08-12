@@ -2,8 +2,8 @@
 # Email: minfun@live.com
 # link: https://leetcode.com/problems/add-two-numbers/#/description
 import unittest
-from add_two_numbers_2 import Solution
-from add_two_numbers_2 import LinkedList
+from leetcode.no2_add_two_numvers import Solution
+from leetcode.no2_add_two_numvers import LinkedList
 
 
 class Test(unittest.TestCase):

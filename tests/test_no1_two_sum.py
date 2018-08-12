@@ -2,7 +2,7 @@
 # Email: minfun@live.com
 # link: https://leetcode.com/problems/two-sum/#/description
 import unittest
-from two_sum_1 import Solution
+from leetcode.no1_two_sum import Solution
 
 
 class Test(unittest.TestCase):

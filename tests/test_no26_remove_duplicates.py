@@ -3,7 +3,7 @@
 # link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/#/description
 
 import unittest
-from remove_duplicates_26 import Solution
+from leetcode.no26_remove_duplicates import Solution
 
 
 class Test(unittest.TestCase):

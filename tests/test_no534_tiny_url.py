@@ -1,7 +1,7 @@
 # Github: https://github.com/minfun/leetcode
 # Email: minfun@live.com
 # link: https://leetcode.com/problems/design-tinyurl/#/description
-from tiny_url_534 import Codec
+from leetcode.no534_tiny_url import Codec
 import unittest
 
 

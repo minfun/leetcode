@@ -2,7 +2,7 @@
 # Email: minfun@live.com
 # link: https://leetcode.com/problems/reverse-integer/#/description
 import unittest
-from reverse_integer_7 import Solution
+from leetcode.no7_reverse_integer import Solution
 
 
 class Test(unittest.TestCase):
