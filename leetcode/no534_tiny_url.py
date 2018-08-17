@@ -1,6 +1,6 @@
 # Github: https://github.com/minfun/leetcode
-# Email: minfun@live.com
-# link: https://leetcode.com/problems/design-tinyurl/#/description
+# Email: nowican@live.com
+# Link: https://leetcode.com/problems/design-tinyurl/#/description
 
 import string
 import random

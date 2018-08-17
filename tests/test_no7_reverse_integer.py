@@ -1,6 +1,6 @@
 # Github: https://github.com/minfun/leetcode
-# Email: minfun@live.com
-# link: https://leetcode.com/problems/reverse-integer/#/description
+# Email: nowican@live.com
+# Link: https://leetcode.com/problems/reverse-integer/#/description
 import unittest
 from leetcode.no7_reverse_integer import Solution
 

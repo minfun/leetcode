@@ -1,5 +1,5 @@
 # Github: https://github.com/minfun/leetcode
-# Email: minfun@live.com
+# Email: nowican@live.com
 # link: https://leetcode.com/problems/add-two-numbers/#/description
 
 

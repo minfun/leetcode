@@ -1,6 +1,6 @@
 # Github: https://github.com/minfun/leetcode
-# Email: minfun@live.com
-# link: https://leetcode.com/problems/task-scheduler/#/description
+# Email: nowican@live.com
+# Link: https://leetcode.com/problems/task-scheduler/#/description
 import unittest
 from leetcode.no621_task_scheduler import Solution
 

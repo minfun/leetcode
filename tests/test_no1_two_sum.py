@@ -1,5 +1,5 @@
 # Github: https://github.com/minfun/leetcode
-# Email: minfun@live.com
+# Email: nowican@live.com
 # link: https://leetcode.com/problems/two-sum/#/description
 import unittest
 from leetcode.no1_two_sum import Solution
