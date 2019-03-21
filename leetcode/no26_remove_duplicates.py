@@ -1,6 +1,7 @@
 # Github: https://github.com/minfun/leetcode
 # Email: nowican@live.com
 # Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/#/description
+# Wechat: creategoodthing
 
 
 class Solution(object):

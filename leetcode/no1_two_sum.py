@@ -1,6 +1,7 @@
 # Github: https://github.com/minfun/leetcode
 # Email: nowican@live.com
 # Link: https://leetcode.com/problems/two-sum/#/description
+# Wechat: creategoodthing
 
 
 class Solution(object):

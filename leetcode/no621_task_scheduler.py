@@ -1,7 +1,7 @@
 # Github: https://github.com/minfun/leetcode
 # Email: nowican@live.com
 # Link: https://leetcode.com/problems/task-scheduler/#/description
-
+# Wechat: creategoodthing
 import collections
 
 

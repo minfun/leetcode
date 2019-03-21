@@ -1,3 +1,8 @@
+# Github: https://github.com/minfun/leetcode
+# Email: nowican@live.com
+# Wechat: creategoodthing
+
+
 class TreeNode(object):
 
     def __init__(self, x):

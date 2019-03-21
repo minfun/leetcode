@@ -1,6 +1,7 @@
 # Github: https://github.com/minfun/leetcode
 # Email: nowican@live.com
 # Link: https://leetcode.com/problems/design-tinyurl/#/description
+# Wechat: creategoodthing
 
 import string
 import random

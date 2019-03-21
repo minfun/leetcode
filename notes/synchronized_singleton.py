@@ -1,3 +1,6 @@
+# Github: https://github.com/minfun/leetcode
+# Email: nowican@live.com
+# Wechat: creategoodthing
 import threading
 
 
