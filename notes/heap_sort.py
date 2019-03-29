@@ -1,3 +1,4 @@
+# -*-encoding:utf8-*-
 # Github: https://github.com/minfun/leetcode
 # Email: nowican@live.com
 # Wechat: creategoodthing
@@ -7,24 +8,32 @@ def swap(data, root, last):
     data[root], data[last] = data[last], data[root]
 
 
-#调整父节点 与孩子大小， 制作大顶堆
+# 调整父节点 与孩子大小， 制作大顶堆
 def adjust_heap(data, par_node, high):
 
     new_par_node = par_node
-    j = 2*par_node +1   #取根节点的左孩子， 如果只有一个孩子 high就是左孩子，如果有两个孩子 high 就是右孩子
 
-    while j <= high: #如果 j = high 说明没有右孩子，high就是左孩子
-        if j < high and data[j] < data[j+1]: #如果这儿不判断 j < high 可能超出索引
+    print 'new_par_node'
+    print new_par_node
+    print 'par_node'
+    print par_node
+
+    j = 2*par_node + 1   # 取根节点的左孩子， 如果只有一个孩子 high就是左孩子，如果有两个孩子 high 就是右孩子
+    print 'j'
+    print j
+
+    while j <= high:  # 如果 j = high 说明没有右孩子，high就是左孩子
+        if j < high and data[j] < data[j+1]:  # 如果这儿不判断 j < high 可能超出索引
             # 一个根节点下，如果有两个孩子，将 j  指向值大的那个孩子
             j += 1
-        if data[j] > data[new_par_node]: #如果子节点值大于父节点，就互相交换
+        if data[j] > data[new_par_node]:  # 如果子节点值大于父节点，就互相交换
             data[new_par_node], data[j] = data[j], data[new_par_node]
-            new_par_node = j #将当前节点，作为父节点，查找他的子树
+            new_par_node = j  # 将当前节点，作为父节点，查找他的子树
             j = j * 2 + 1
 
         else:
             # 因为调整是从上到下，所以下面的所有子树肯定是排序好了的，
-            #如果调整的父节点依然比下面最大的子节点大，就直接打断循环，堆已经调整好了的
+            # 如果调整的父节点依然比下面最大的子节点大，就直接打断循环，堆已经调整好了的
             break
 
 
@@ -40,31 +49,50 @@ def heap_sort(lst):
     :return:
     """
     length = len(lst)
-    last = length -1  #最后一个元素的 索引
-    last_par_node = length//2 -1
+    print 'length'
+    print length
+    last = length - 1  # 最后一个元素的 索引
+    last_par_node = length//2 - 1
+    print 'last'
+    print last
+    print 'last_par_node'
+    print last_par_node
 
     while last_par_node >= 0:
 
         adjust_heap(lst, last_par_node, length-1)
-        last_par_node -= 1  #每调整好一个节点，从后往前移动一个节点
+        last_par_node -= 1  # 每调整好一个节点，从后往前移动一个节点
 
+    print 'lst'
+    print lst
     # return lst
     while last > 0:
 
         #
-        #swap(lst, 0, last)
-        lst[0], lst[last] = lst[last],lst[0]
+        # swap(lst, 0, last)
+        lst[0], lst[last] = lst[last], lst[0]
         # 调整堆少让 adjust 处理最后已经排好序的数，就不处理了
         adjust_heap(lst, 0, last-1)
         last -= 1
 
-    return lst #将列表返回
+    return lst  # 将列表返回
+
 
 list_ = [4, 7, 0, 9, 1, 5, 3, 3, 2, 6]
+
+#        4
+#     7      0
+#   9   1  5   3
+#  3 2 6
+
+#        9
+#     7      5
+#   4   6   0  3
+#  3 2 1
 
 heap_sort(list_)
 print(list_)
 
 
-#最后结果为：
-[0, 1, 2, 3, 3, 4, 5, 6, 7, 9]
+# 最后结果为：
+# [0, 1, 2, 3, 3, 4, 5, 6, 7, 9]
