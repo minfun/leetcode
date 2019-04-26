@@ -1,2 +1,5 @@
 codecov==2.0.9
+greenlet
+gevent
+requests
 nose
