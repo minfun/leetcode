@@ -21,3 +21,9 @@ class Solution(object):
         s = cmp(x, 0)
         r = int(`s * x`[::-1])
         return s * r * (r < 2 ** 31)
+
+
+class Solution2:
+    def reverse(self, x):
+        r = x // max(1, abs(x)) * int(str(abs(x))[::-1])
+        return r if r.bit_length() < 32 or r == -2**31 else 0

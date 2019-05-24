@@ -4,10 +4,6 @@
 # Wechat: creategoodthing
 
 
-def swap(data, root, last):
-    data[root], data[last] = data[last], data[root]
-
-
 # 调整父节点 与孩子大小， 制作大顶堆
 def adjust_heap(data, par_node, high):
     j = 2*par_node + 1   # 取根节点的左孩子， 如果只有一个孩子 high就是左孩子，如果有两个孩子 high 就是右孩子
@@ -47,9 +43,6 @@ def heap_sort(lst):
 
     # return lst
     while last > 0:
-
-        #
-        # swap(lst, 0, last)
         lst[0], lst[last] = lst[last], lst[0]
         # 调整堆少让 adjust 处理最后已经排好序的数，就不处理了
         adjust_heap(lst, 0, last-1)
