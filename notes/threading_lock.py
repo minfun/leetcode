@@ -36,5 +36,5 @@ for t in t_obj:
 for t_m in t_obj_mutex:
     t_m.join()
 
-print "num:", num
-print "num_mutex:", num_mutex
+print("num:", num)
+print("num_mutex:", num_mutex)

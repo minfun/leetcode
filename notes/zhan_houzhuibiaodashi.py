@@ -36,5 +36,4 @@ def eval_postfix(expr):
             stack.append(operator[token](x, y))
     return stack.pop()
 
-
 print(eval_postfix('2 3 4 * +'))

@@ -16,9 +16,9 @@
 
 
 def knapsack(package, items):
-    n = len(items)
-    stack = []
-    index = 0
+    n = len(items)  # 可选物品的数量
+    stack = []  # 创建一个栈
+    index = 0  # 当前所选择的物品游标
     while stack or index < n:
         # print('current stack')
         # print(stack)

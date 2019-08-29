@@ -21,4 +21,4 @@ def generate_tokens(pat, text):
 
 
 for tok in generate_tokens(pat, 'foo = 42'):
-    print tok
+    print(tok)

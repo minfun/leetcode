@@ -14,14 +14,14 @@ def producer(worker, q):
     while True:
         if not q.full():
             q.put(count)
-            print '{} produce {}, qsize {}'.format(worker, count, q.qsize())
+            print('{} produce {}, qsize {}'.format(worker, count, q.qsize()))
             count += 1
         time.sleep(0.3)
 
 
 def consumer(name, q):
     while True:
-        print '{} consume {}'.format(name, q.get())
+        print('{} consume {}'.format(name, q.get()))
         time.sleep(1)
         if q.qsize() == 0:
             break
